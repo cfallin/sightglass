@@ -8,9 +8,12 @@ fn main() {
 
     bench::start();
 
-    let parser = Parser::new_ext(&markdown_input, options);
     let mut html_output = String::new();
-    html::push_html(&mut html_output, parser);
+    for _ in 0..500 {
+        let parser = Parser::new_ext(&markdown_input, options);
+        html_output.clear();
+        html::push_html(&mut html_output, parser);
+    }
 
     bench::end();
 
