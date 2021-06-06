@@ -42,7 +42,10 @@ int main()
     printf("[ackermann] running with M = %d and N = %d\n", M, N);
 
     bench_start();
-    int result = ackermann(M, N);
+    int result = 0;
+    for (int iter = 0; iter < 101; iter++) {
+        result ^= ackermann(M, N);
+    }
     bench_end();
 
     printf("[ackermann] returned %d\n", result);

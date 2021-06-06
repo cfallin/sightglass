@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define LENGTH 30
+#define LENGTH 60
 
 int main()
 {

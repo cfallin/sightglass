@@ -2,7 +2,7 @@
 #include <sightglass.h>
 #include <stdint.h>
 
-#define ITERATIONS 10000
+#define ITERATIONS 1000000
 #define keccak_BLOCKBYTES 200
 #define ROTL64(x, b) (uint32_t)(((x) << (b)) | ((x) >> (64 - (b))))
 
